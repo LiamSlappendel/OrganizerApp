@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.google.firebase.firestore.FirebaseFirestore
 import com.lh1164765.organizerapp.databinding.ActivityListsBinding
 
 class ListsActivity : AppCompatActivity() {
@@ -26,8 +27,18 @@ class ListsActivity : AppCompatActivity() {
             var listName = binding.ListNameInput.text.toString()
 
             if (listName.isNotEmpty()) {
-                var list = listData(listName, ArrayList<String>(), null)
+                var list = listData(listName, ArrayList<String>())
+                val db = FirebaseFirestore.getInstance().collection("Lists")
 
+                val id = db.document().id
+
+                db.document(id).set(list)
+                    .addOnSuccessListener {
+                        Toast.makeText(this, "List created", Toast.LENGTH_SHORT).show()
+                    }
+                    .addOnFailureListener {
+                        Toast.makeText(this, "List creation failed", Toast.LENGTH_SHORT).show()
+                    }
             }
             else
             {
