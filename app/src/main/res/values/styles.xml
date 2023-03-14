@@ -17,4 +17,16 @@
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:textSize">12sp</item>
     </style>
+
+    <style name="MainButtonsStyle">
+        <item name="android:layout_width">@dimen/buttonWidth</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+    </style>
+
+    <style name="ItemViewStyle">
+        <item name="android:layout_width">387dp</item>
+        <item name="android:layout_height">314dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
 </resources>
