@@ -39,7 +39,9 @@ class ListsActivity : AppCompatActivity() {
                 var currentUser = auth.currentUser!!.uid
                 val id = db.document().id
 
-                var list = listData(id, listName, ArrayList<String>() , currentUser)
+                var listItems =binding.ListItemInput.text.toString().split(",") as ArrayList<String>
+
+                var list = listData(id, listName, listItems , currentUser)
 
 
 

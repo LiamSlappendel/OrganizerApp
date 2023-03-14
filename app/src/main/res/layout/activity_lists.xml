@@ -37,17 +37,9 @@
     <EditText
         android:id="@+id/ListItemInput"
         style="@style/TextInput"
-        android:hint=" List Item"
+        android:hint=" List item, List Item, List Item"
         app:layout_constraintStart_toStartOf="@+id/recyclerView"
         app:layout_constraintTop_toBottomOf="@+id/ListNameInput" />
-
-    <Button
-        android:id="@+id/AddItemButton"
-        style="@style/Button"
-        android:text="Add Item"
-        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
-        app:layout_constraintStart_toEndOf="@+id/ListItemInput"
-        app:layout_constraintTop_toBottomOf="@+id/CreateListButton" />
 
     <Button
         android:id="@+id/homeButton1"

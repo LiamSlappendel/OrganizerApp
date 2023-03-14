@@ -26,7 +26,7 @@
         android:gravity="center"
         android:paddingEnd="3dp"
         android:paddingBottom="3dp"
-        android:text="Default Text"
+        android:hint="Default Text"
         android:textSize="12sp"
         />
 
