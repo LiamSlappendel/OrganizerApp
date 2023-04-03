@@ -8,7 +8,7 @@
     android:background="@color/backgroundOrange">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/ListsTitleText"
         android:layout_width="201dp"
         android:layout_height="40dp"
         android:layout_marginTop="32dp"
@@ -59,7 +59,7 @@
         android:layout_height="315dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/ListsTitleText"
         android:background="@color/white"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         />

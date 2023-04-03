@@ -5,6 +5,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\slapp\\AndroidStudioProjects\\OrganizerApp\\deployment\\OrganizerAppKeyStore.jks')
+            storePassword '42Luella'
+            keyAlias 'key0'
+            keyPassword '42Luella'
+        }
+    }
     namespace 'com.lh1164765.organizerapp'
     compileSdk 32
 
@@ -16,6 +24,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
     }
 
     buildFeatures {

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsActivity"
+    android:background="@color/backgroundOrange">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+
+        android:layout_width="387dp"
+        android:layout_height="315dp"
+        android:background="@color/white"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListsTitleText" />
+
+    <TextView
+        android:id="@+id/ListsTitleText"
+        android:layout_width="201dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Events"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/EventNameInput"
+        style="@style/TextInput"
+        android:hint=" Event Name"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView2"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+
+    <EditText
+        android:id="@+id/EventDateInput"
+        style="@style/TextInput"
+        android:layout_marginTop="20dp"
+        android:hint=" Event Date(DD/MM/YYYY)"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView2"
+        app:layout_constraintTop_toBottomOf="@+id/EventNameInput" />
+
+    <EditText
+        android:id="@+id/EventDescInput"
+        style="@style/TextInput"
+        android:layout_width="383dp"
+        android:layout_height="102dp"
+        android:hint=" Event Description/Notes"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView2"
+        app:layout_constraintTop_toBottomOf="@+id/EventDateInput" />
+
+    <Button
+        android:id="@+id/CreateListButton"
+        style="@style/Button"
+        android:text="Create"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView2"
+        app:layout_constraintStart_toEndOf="@+id/EventNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+
+    <Button
+        android:id="@+id/homeButton1"
+        android:layout_width="178dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EventDescInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

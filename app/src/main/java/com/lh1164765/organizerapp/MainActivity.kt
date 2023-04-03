@@ -20,6 +20,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ListsActivity::class.java)
             startActivity(intent)
         }
+
+        //listener for when button is pressed, will open the events activity
+        binding.button3.setOnClickListener {
+            val intent = Intent(this, EventsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     //listener for when button is pressed, will open the lists activity

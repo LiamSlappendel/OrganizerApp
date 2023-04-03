@@ -17,7 +17,8 @@
         android:gravity="center_horizontal"
         android:textSize="14sp"
         android:padding="3dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
     <TextView
         android:id="@+id/listContentTextView"
@@ -28,6 +29,7 @@
         android:paddingBottom="3dp"
         android:hint="Default Text"
         android:textSize="12sp"
+        android:textColor="@color/black"
         />
 
 </android.widget.LinearLayout>
