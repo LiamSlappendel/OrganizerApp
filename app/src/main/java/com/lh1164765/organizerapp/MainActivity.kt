@@ -40,6 +40,8 @@ class MainActivity : AppCompatActivity() {
                 .addOnCompleteListener {
                     // ...
                 }
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
         }
     }
 
