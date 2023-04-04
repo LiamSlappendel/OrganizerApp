@@ -16,7 +16,7 @@ import com.lh1164765.organizerapp.databinding.ActivityListsBinding
 class EventsActivity {
     private lateinit var binding: ActivityListsBinding
     private lateinit var auth : FirebaseAuth
-
+/*
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -46,7 +46,7 @@ class EventsActivity {
 
 
 
-                db.document(id).set(list)
+                db.document(id).set(event)
                     .addOnSuccessListener {
                         Toast.makeText(this, "List created", Toast.LENGTH_SHORT).show()
                     }
@@ -67,4 +67,6 @@ class EventsActivity {
             binding.recyclerView.adapter = ListAdaptor(this, lists)
         })
     }
+    */
+
 }

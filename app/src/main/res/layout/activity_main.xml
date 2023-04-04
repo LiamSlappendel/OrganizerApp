@@ -68,7 +68,7 @@
 
     <Button
         android:id="@+id/button4"
-        android:text="Notes"
+        android:text="Signout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/scrollView2"
         app:layout_constraintHorizontal_bias="0.531"
